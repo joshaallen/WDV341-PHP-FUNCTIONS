@@ -66,7 +66,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="This webpage will use php to format dates, times and string inputs">
   <meta name="keywords" content="PHP, Date Formatter">
-  <meta name="autho" content="Joshua Allen">
+  <meta name="author" content="Joshua Allen">
   <link rel="stylesheet" href="phpFunctions.css">
   <title>Document</title>
             <!-- 
@@ -84,7 +84,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Homework Page</a></li>
-                    <li><a href="http://joshuaallen.info/WDV240/project1/blog/">My Blog</a></li>
+                    <li><a href="#">My Blog</a></li>
                     <li><a href="#">SCSS</a></li>
                 </ul>
             </aside>
