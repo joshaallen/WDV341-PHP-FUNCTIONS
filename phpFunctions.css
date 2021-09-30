@@ -1,107 +1,17 @@
-/*              Unit 3 Assignment
-				Author: Joshua Allen
-                Date: September 28, 2021
-*/
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 5 | @import 'reset';
+ *   |         ^^^^^^^
+ *   '
+ *   phpFunctions.scss 5:9  root stylesheet */
 
-body, html {
-  margin: 0px;
-  padding: 0px;
-  height: 100%;
-  font-size: 100%;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import 'reset';\d\a   \2502          ^^^^^^^\a   \2575 \a   phpFunctions.scss 5:9  root stylesheet";
 }
-
-a {
-  text-decoration: none;
-}
-
-body {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#814374+0,51a39d+100 */
-  background: #814374;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #814374 0%, #51a39d 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #814374 0%, #51a39d 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #814374 0%, #51a39d 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#814374", endColorstr="#51a39d",GradientType=0 );
-  /* IE6-9 */
-}
-@media (min-width: 700px) {
-  body #flexBox-id {
-    flex-flow: row nowrap;
-  }
-}
-body .container {
-  width: 100%;
-  height: 100%;
-}
-body .container header {
-  text-align: center;
-}
-body .container .flexBox {
-  height: 100%;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-flow: column nowrap;
-}
-body .container .flexBox aside {
-  background-color: #FF6600;
-  color: #000000;
-  white-space: nowrap;
-}
-body .container .flexBox aside ul {
-  padding: 0;
-}
-body .container .flexBox aside ul li {
-  padding: 30px;
-  text-align: center;
-}
-body .container .flexBox aside ul li a {
-  font-size: 20px;
-  border: 2px solid transparent;
-  border-radius: 25px;
-  padding: 10px;
-  -webkit-transition: background-color 2s;
-  /* For Safari 3.1 to 6.0 */
-  transition: background-color 2s;
-}
-body .container .flexBox aside ul li a:hover {
-  background-color: #aa9d6f;
-  font-size: 24px;
-  cursor: pointer;
-}
-body .container .flexBox main {
-  background-color: #CCCCCC;
-  color: #000000;
-}
-body .container .flexBox main p {
-  margin: 20px;
-}
-body .container .flexBox main ol {
-  margin: 20px;
-  list-style-type: decimal;
-  list-style-position: inside;
-  padding: 0;
-}
-
-/*# sourceMappingURL=phpFunctions.css.map */
