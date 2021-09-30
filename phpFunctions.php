@@ -90,7 +90,7 @@
             </aside>
             <main>
                 <form id="form1" method="post"action="functions.php">
-                    <label for="text1">1. Create a function that will accept a date input and format it into mm/dd/yyyy format.</label><input type="text" name="text1" id="text1"><input type="submit" value="button1"><input type="reset" value="Reset"> <?php echo "The formatted date is : " . dateFormatter($dateString); ?> 
+                    <label for="text1">1. Create a function that will accept a date input and format it into mm/dd/yyyy format.</label><input type="text" name="text1" id="text1"><input type="submit" value="button1"><?php echo "The formatted date is : " . dateFormatter($dateString); ?> 
                 </form>
                 <form id="form2" method="post"action="functions.php">
                     <label for="text2">2. Create a function that will accept a date input and format it into dd/mm/yyyy format to use when working with international dates.</label><input type="text" name="text2" id="text2"><input type="submit" value="button2"><?php echo "The formatted international date is : " . internationalDateFormatter($internationalDateString);?> 
