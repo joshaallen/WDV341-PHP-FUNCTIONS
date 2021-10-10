@@ -67,6 +67,7 @@
   <meta name="description" content="This webpage will use php to format dates, times and string inputs">
   <meta name="keywords" content="PHP, Date Formatter">
   <meta name="author" content="Joshua Allen">
+  <link rel="stylesheet" href="phpFunctions.css">
   <title>Document</title>
             <!-- 
                 Joshua Allen
@@ -77,24 +78,15 @@
 </head>
 <body>
 <div class="container">
-        <header><h1>PhP Functions</h1></header>
-        <div class="flexBox" id="flexBox-id">
-            <aside>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Homework Page</a></li>
-                    <li><a href="#">My Blog</a></li>
-                    <li><a href="#">SCSS</a></li>
-                </ul>
-            </aside>
+        <h1>PhP Functions</h1>
             <main>
-                <form id="form1" method="post"action="functions.php">
+                <form id="form1" method="post"action="phpFunctions.php">
                     <label for="text1">1. Create a function that will accept a date input and format it into mm/dd/yyyy format.</label><input type="text" name="text1" id="text1"><input type="submit" value="button1"><?php echo "The formatted date is : " . dateFormatter($dateString); ?> 
                 </form>
-                <form id="form2" method="post"action="functions.php">
+                <form id="form2" method="post"action="phpFunctions.php">
                     <label for="text2">2. Create a function that will accept a date input and format it into dd/mm/yyyy format to use when working with international dates.</label><input type="text" name="text2" id="text2"><input type="submit" value="button2"><?php echo "The formatted international date is : " . internationalDateFormatter($internationalDateString);?> 
                 </form>
-                <form id="form3" method="post"action="functions.php">
+                <form id="form3" method="post"action="phpFunctions.php">
                     <label for="text3">3. Create a function that will accept a string input.  It will do the following things to the string:</label> <input type="text" name="text3" id="text3"><input type="submit" value="button3">
                     <ul>
                         <li>Display the number of characters in the string</li><?php echo stringFormatter($string)[0] ?>
@@ -103,14 +95,13 @@
                         <li>Will display whether or not the string contains "DMACC" either upper or lowercase</li><?php echo stringFormatter($string)[3] ?>
                     </ul>
                 </form>
-                <form id="form4" method="post"action="functions.php">
+                <form id="form4" method="post"action="phpFunctions.php">
                     <label for="text4">4. Create a function that will accept a number and display it as a formatted number. Use 1234567890 for your testing.</label><input type="text" name="text4" id="text4"><input type="submit" value="button4"><?php echo "The formatted number is : " . numberFormatter($numString); ?> 
                 </form>
-                <form id="form5" method="post"action="functions.php">
+                <form id="form5" method="post"action="phpFunctions.php">
                     <label for="text5">5. Create a function that will accept a number and display it as US currency. Use 123456 for your testing.</label><input type="text" name="text5" id="text5"><input type="submit" value="button5"><?php echo "The US Dollar value is: " . usNumberFormatter($usNumString); ?>
                 </form>
             </main> 
-        </div><!--end of flex Box-->
     </div><!--end of container-->
 </body>
 </html>

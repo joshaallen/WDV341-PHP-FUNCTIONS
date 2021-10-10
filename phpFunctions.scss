@@ -1,0 +1,71 @@
+//resets
+*,::after,::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  background-color: lightgray;
+  min-height: 100%;
+  width: 100%;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+//layouts
+.container {
+  min-width: 300px;
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 800px;
+}
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+main {
+  background-color: lightblue;
+}
+label {
+  margin-bottom: 15px;
+}
+[type="text"] {
+  margin-bottom: 15px;
+}
+[type="text"], [type="submit"] , label{
+  display: block;
+  width: 100%;
+}
+[type="text"] {
+  padding: 10px 10px;
+}
+[type="submit"]{
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+form {
+  margin-bottom: 40px;
+}
+//Media Queries
+@media  screen and (min-width: 600px)  {
+  [type="submit"] {
+    width: 150px;
+    margin: 0 auto;
+  }
+}
+//Typography
+body {
+  font: 1.6rem "Times New Roman", Times, serif;
+}
