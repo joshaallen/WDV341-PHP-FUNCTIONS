@@ -67,7 +67,6 @@
   <meta name="description" content="This webpage will use php to format dates, times and string inputs">
   <meta name="keywords" content="PHP, Date Formatter">
   <meta name="author" content="Joshua Allen">
-  <link rel="stylesheet" href="phpFunctions.css">
   <title>Document</title>
             <!-- 
                 Joshua Allen
