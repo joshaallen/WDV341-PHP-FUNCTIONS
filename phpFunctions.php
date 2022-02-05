@@ -24,8 +24,16 @@
  * @return $formattedDate is the new formatted date 
  */    
      function dateFormatter($string) {
-            $dateobject = strtotime($string);
-            $formattedDate = date("m/d/Y", $dateobject);
+         //Checking if valid Timestamp was entered
+            if(strtotime($string) === false ){
+                
+                $formattedDate = "Invalid Entry";
+            }
+            else {
+               $dateobject = strtotime($string);
+                $formattedDate = date("m/d/Y", $dateobject);
+            }  
+           
             return $formattedDate;
      }
 /** 
@@ -34,8 +42,15 @@
  * @return $formattedDate is the new international formatted date 
  */    
      function internationalDateFormatter($string) {
-        $dateobject = strtotime($string);
-        $formattedDate = date("Y-m-d", $dateobject);
+         //Checking if valid Timestamp was entered
+         if(strtotime($string) === false) {
+             $formattedDate = "Invalid Entry";
+         }
+         else {
+            $dateobject = strtotime($string);
+            $formattedDate = date("Y-m-d", $dateobject);
+         }
+        
         return $formattedDate;
  }
  /** 
